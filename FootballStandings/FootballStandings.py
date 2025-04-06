@@ -10,6 +10,7 @@ response = requests.get(api_url)
 data = response.json()
 
 #Error Checking 
+#Error Checking
 
 if response.status_code == requests.codes.ok:
     print("")
@@ -97,3 +98,5 @@ conn.commit()
 # To terminate the connection
 cur.close()
 conn.close()
+
+# Data now set will try to generate insights from the data, the software used will be mostly POWER BI or Tableau.
