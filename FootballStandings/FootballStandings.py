@@ -9,7 +9,6 @@ api_url = 'https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s=20
 response = requests.get(api_url)
 data = response.json()
 
-#Error Checking 
 #Error Checking
 
 if response.status_code == requests.codes.ok:
@@ -41,7 +40,6 @@ conn = psycopg2.connect(
     host= 'HOSTNAME',
     port= 'PORT_ID' #(DEFAULT - 5432)
     )
-
 # Creating a cursor object using the connection object
 cur = conn.cursor()
 
@@ -100,3 +98,9 @@ cur.close()
 conn.close()
 
 # Data now set will try to generate insights from the data, the software used will be mostly POWER BI or Tableau.
+# Key insight points from the data :- 
+# Small description of the league standings data:
+# 1 - Despite finishing 2nd in the league, Arsenal boost best defensive record in the league with just 
+# 2 - Liverpool finished third however if they had won thier last 5 games they would have finished 1st. and eventual chamions 
+# 3 - Sheffield United finished 20th with an astonishing 104 goals conceded in the league. Which is the most since PL started in 1992 ending the season with worst goal difference of -69.
+# 4 - Qualifictaion of newcastle was halted even though they finished 7th in the league, because of the FA cup win by Manchester United and them finishing 8th in the league.
