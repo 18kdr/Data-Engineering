@@ -15,7 +15,8 @@ Data Engineering Projects
 This project helped me apply both data engineering and data visualization skills in a real-world scenario — powered by my passion for football!
 
 **Dataset details:**
-API - https://www.thesportsdb.com/
+
+API - https://www.thesportsdb.com/free_sports_api
 
 📊 Key Columns Overview
 strTeam	-> Team name (e.g., Manchester City, Arsenal)
