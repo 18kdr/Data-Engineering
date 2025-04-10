@@ -1,7 +1,7 @@
 Data Engineering Projects 
 ---------------------------------------------------------------------------------------------
 
-### ⚽ Premier League 2023/24 Dashboard (Power BI)
+### ⚽ Premier League 2023/24 Dashboard (Power BI) - Data Engineering Project - 1
 
 **Tools:** Python, PostgreSQL, Power BI  
 **Focus:** Data pipeline + Visualization
