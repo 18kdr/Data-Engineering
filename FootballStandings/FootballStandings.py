@@ -26,7 +26,8 @@ print(df.columns)
 # Step 3 - Storing the data 
 
 # Storing the data in a CSV file
-path = r'path_you_want_to_store_the_file_at'
+path = r'path_to_your_csv'
+path = r'C:\Users\Kartikay\Desktop\Data Engineering Docs\League Standings\Football_standings.csv'
 df.to_csv(path, index=False)
 
 # Storing the data in Postgres 
@@ -34,11 +35,11 @@ df.to_csv(path, index=False)
 # Establishing the connection to the PostgreSQL database
 # Note: Make sure to have PostgreSQL installed and running on your machine.
 conn = psycopg2.connect(
-    dbname= 'DB_NAME',
-    user= 'USERNAME',
-    password= 'PASSWORD', 
-    host= 'HOSTNAME',
-    port= 'PORT_ID' #(DEFAULT - 5432)
+    dbname='DB_NAME',
+    user='DB_USER',
+    password='DB_PASSWORD', 
+    host='localhost',
+    port=5432
     )
 # Creating a cursor object using the connection object
 cur = conn.cursor()
