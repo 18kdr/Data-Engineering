@@ -26,6 +26,7 @@ print(df.columns)
 # Step 3 - Storing the data 
 
 # Storing the data in a CSV file
+path = r'path_to_your_csv'
 path = r'C:\Users\Kartikay\Desktop\Data Engineering Docs\League Standings\Football_standings.csv'
 df.to_csv(path, index=False)
 
@@ -34,9 +35,9 @@ df.to_csv(path, index=False)
 # Establishing the connection to the PostgreSQL database
 # Note: Make sure to have PostgreSQL installed and running on your machine.
 conn = psycopg2.connect(
-    dbname='league_standings_db',
-    user='postgres',
-    password='postgres', 
+    dbname='DB_NAME',
+    user='DB_USER',
+    password='DB_PASSWORD', 
     host='localhost',
     port=5432
     )
