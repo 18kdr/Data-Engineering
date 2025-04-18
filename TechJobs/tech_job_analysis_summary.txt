@@ -1,0 +1,19 @@
+Analysis Goals : - 
+- Gain insights on job type [full time, part time, contract, etc.]
+- Job location 
+- Pay range of Jobs
+- Amount of Jobs listed on Portals
+
+
+
+Process for Data Engineering :-
+- Load the dataset from the source ( An excel file)
+- Data Cleaning
+    - .info() -> Used to extract information of the dataset ( Non-null values, Count, datatype)
+    - .isnull().sum() -> Used to extract info about the null values in each columns
+    - .drop([column_names], axis = 1) (axis = 1 is columns, axis = 0 is rows)
+
+Process for data Analysis :-
+Goal - 1 -- Gain insights on job type  
+    - Removed all the sum of values for jobtype
+    - Grouped the job type in  
