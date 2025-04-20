@@ -4,16 +4,46 @@ Analysis Goals : -
 - Pay range of Jobs
 - Amount of Jobs listed on Portals
 
+Data Engineering :-
 
+- Load the dataset from the source ( An excel file )
 
-Process for Data Engineering :-
-- Load the dataset from the source ( An excel file)
-- Data Cleaning
+- Data Cleaning functions 
     - .info() -> Used to extract information of the dataset ( Non-null values, Count, datatype)
     - .isnull().sum() -> Used to extract info about the null values in each columns
     - .drop([column_names], axis = 1) (axis = 1 is columns, axis = 0 is rows)
+    - .drop_duplicates() -> Used to remove duplicate values
+    - .duplicated() -> Used to check duplicated values 
+    - .apply() -> Apply the function on each panda series
+    - str.strip() -> Remove any whitespaces from the string 
+    - .unique() -> find out all the unique values
+    - dropna(subset=['column_header']) -> Drop null values in the specified column
+    - str.rsplit('seperator_type', n= reverse_num_to_start , expand=True) -> Split the column in reverse 
+    - .explode() -> function in Pandas is used to transform each element of a list-like object in a Series or column into a separate row
+    - .fillna('val') -> Fil NA values with specific values
+    - .replace('old_val','new_val')
+    - isin(['val']) -> will filter out all the values 
+    - .reindex('values_by_which') -> Used to apply your custom index
 
-Process for data Analysis :-
+
+
+Process for Data Analysis :-
+
 Goal - 1 -- Gain insights on job type  
     - Removed all the sum of values for jobtype
-    - Grouped the job type in  
+    - Grouped the job type and categorized the into 3 types ( Full-Time, Contract, Part-time)
+    - Plotted the insights using Horizontal Bar chart
+
+Goal - 2 -- Job location
+    - Splitting of location into 3 columns ( City, State, Country)
+    - Transform Country to specific common value
+    - Potted the insights using Horizontal Bar chart.
+
+Goal - 3 -- Pay range Categorization 
+    - Removed the null values 
+    - Divided the data in 3 categories
+    - Plotted the insights using vertical bar chart
+
+Goal - 4 -- Distribution of Jobs on Job portals
+    - Dropped the neglible amount of values
+    - Applied Donut chart to show the distribution
