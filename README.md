@@ -47,7 +47,9 @@ strBadge -> URL of each team’s logo for visual use in dashboards
 ### Tech Job Analysis - Data Engineering Project - 2
 
 **Tools:** Python
+
 **Libraries** Pandas, MatplotLib
+
 **Focus:** Data Engineering + Visualization
 
 **What I did:**
