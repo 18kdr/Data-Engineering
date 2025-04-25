@@ -62,3 +62,14 @@ How many unique timezones are there across countries?
 What is the geographical spread of flags and coats of arms?
 
 Can we generate a map showing population distribution or land area size?
+
+
+
+
+Tile Title	Metric / Insight
+🌍 Total Countries	Count from the dataset
+🔒 Landlocked Countries	Filtered count from landlocked=True
+🏳️ Common Languages	Top 5 from languages field
+💸 Gini Index Leaders	Countries with highest inequality
+🌐 UN Members	Count from unMember=True
+🏁 Flag Gallery	Image tile grid from flags field
