@@ -1,13 +1,16 @@
 import prefect
 from prefect import flow, task
+import papermill as pm
 
 @task
-def say_hello():
-    print("Hello from Prefect!")
+def executing_notebook():
+    pm.execute_notebook(
+        "DataSilos.ipynb",
+    )
 
 @flow
-def hello_flow():
-    say_hello()
+def executing_notebook_flow():
+    executing_notebook()
 
 if __name__ == "__main__":
-    hello_flow()
+    executing_notebook_flow()
