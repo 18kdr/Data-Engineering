@@ -6,6 +6,7 @@ import papermill as pm
 def executing_notebook():
     pm.execute_notebook(
         "DataSilos.ipynb",
+        "Datasilos_Executed.ipynb"
     )
 
 @flow
